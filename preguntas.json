@@ -1,0 +1,222 @@
+[
+    {
+        "tema": "cpu",
+        "question": "¿Qué significa CPU?",
+        "answers": [
+            "Unidad de procesamiento central",
+            "Unidad de disco duro",
+            "Unidad de gráficos",
+            "Unidad de memoria"
+        ],
+        "correct": 0
+    },
+    {
+        "tema": "cpu",
+        "question": "¿Cuál es la función principal de la CPU?",
+        "answers": [
+            "Almacenar información",
+            "Procesar datos",
+            "Mostrar gráficos",
+            "Almacenar gráficos"
+        ],
+        "correct": 1
+    },
+    {
+        "tema": "cpu",
+        "question": "¿Qué componente de la CPU almacena datos frecuentemente utilizados?",
+        "answers": [
+            "Memoria caché",
+            "Disco duro",
+            "Memoria RAM",
+            "Tarjeta gráfica"
+        ],
+        "correct": 0
+    },
+    {
+        "tema": "cpu",
+        "question": "¿Es importante la velocidad de una CPU? ¿Por que?",
+        "answers": [
+            "Sí, porque afecta el rendimiento general del sistema",
+            "No, porque la capacidad del disco duro es más importante",
+            "No, porque la velocidad de la RAM es más importante",
+            "No, porque la potencia de la GPU es lo único que importa"
+        ],
+        "correct": 0
+    },
+    {
+        "tema": "cpu",
+        "question": "¿Qué pasa si se rompe mi CPU?",
+        "answers": [
+            "La computadora no arranca",
+            "El sistema operativo se vuelve más lento",
+            "No se puede usar la memoria RAM",
+            "La tarjeta gráfica deja de funcionar"
+        ],
+        "correct": 0
+    },
+    {
+        "tema": "Ram",
+        "question": "¿Qué significa RAM?",
+        "answers": [
+            "Memoria de acceso aleatorio",
+            "Memoria de solo lectura",
+            "Memoria caché",
+            "Memoria virtual"
+        ],
+        "correct": 0
+    },
+    {
+        "tema": "Ram",
+        "question": "¿Cuál es la función principal de la RAM?",
+        "answers": [
+            "Almacenar datos permanentemente",
+            "Almacenar datos temporalmente",
+            "Controlar la velocidad de la CPU",
+            "Mostrar gráficos en la pantalla"
+        ],
+        "correct": 1
+    },
+    {
+        "tema": "Ram",
+        "question": "¿Qué pasa si se rompe la RAM?",
+        "answers": [
+            "La computadora no arranca o funciona de manera inestable",
+            "El disco duro pierde todos los datos",
+            "La pantalla muestra imágenes distorsionadas",
+            "Se reduce la capacidad de almacenamiento permanente"
+        ],
+        "correct": 1
+    },
+    {
+        "tema": "Ram",
+        "question": "¿Todos los dispositivos tienen RAM?",
+        "answers": [
+            "No, solo los dispositivos que necesitan ejecutar programas o procesos",
+            "Sí, todos los dispositivos electrónicos requieren RAM",
+            "No, solo los dispositivos móviles y computadoras tienen RAM",
+            "Sí, pero la cantidad varía según el dispositivo"
+        ],
+        "correct": 0
+    },
+    {
+        "tema": "Ram",
+        "question": "¿Qué sucede con los datos almacenados en la RAM cuando apagas la computadora?",
+        "answers": [
+            "Se pierden",
+            "Se almacenan permanentemente",
+            "Se transfieren al disco duro",
+            "Se guardan en la memoria caché"
+        ],
+        "correct": 0
+    },
+    {
+        "tema": "GPU",
+        "question": "¿Qué significa GPU?",
+        "answers": [
+            "Unidad de procesamiento gráfico",
+            "Unidad de procesamiento central",
+            "Unidad de almacenamiento",
+            "Unidad de procesamiento de memoria"
+        ],
+        "correct": 0
+    },
+    {
+        "tema": "GPU",
+        "question": "¿Cuál es la función principal de la GPU?",
+        "answers": [
+            "Procesar gráficos y renderizar imágenes",
+            "Almacenar datos",
+            "Procesar instrucciones del sistema operativo",
+            "Controlar la memoria RAM"
+        ],
+        "correct": 0
+    },
+    {
+        "tema": "GPU",
+        "question": "¿Por qué es importante la tarjeta gráfica (GPU) en los videojuegos?",
+        "answers": [
+            "Porque mejora los gráficos para que se vean más realistas",
+            "Porque ayuda a almacenar los datos de los juegos",
+            "Porque acelera el procesamiento del sistema",
+            "Porque permite ejecutar varios juegos al mismo tiempo"
+        ],
+        "correct": 0
+    },
+    {
+        "tema": "GPU",
+        "question": "¿Es importante la GPU para ver videos en YouTube o redes sociales?",
+        "answers": [
+            "Sí, porque ayuda a mostrar los gráficos y videos correctamente",
+            "No, solo se necesita la conexión a Internet",
+            "Sí, porque es responsable del sonido en los videos",
+            "No, los videos solo dependen del procesador"
+        ],
+        "correct": 0
+    },
+    {
+        "tema": "GPU",
+        "question": "¿Qué sucede si se rompe la GPU de una computadora?",
+        "answers": [
+            "No se podrán ver imágenes ni videos correctamente",
+            "El sistema operativo dejará de funcionar",
+            "No se podrá escuchar sonido",
+            "La computadora no podrá encenderse"
+        ],
+        "correct": 0
+    },
+    {
+        "tema": "almacenamiento",
+        "question": "¿Qué es un disco duro?",
+        "answers": [
+            "Dispositivo de almacenamiento de datos",
+            "Unidad de procesamiento de datos",
+            "Tarjeta gráfica externa",
+            "Unidad de procesamiento de memoria"
+        ],
+        "correct": 0
+    },
+    {
+        "tema": "almacenamiento",
+        "question": "¿Cuál es la función principal de un disco duro en una computadora?",
+        "answers": [
+            "Almacenar datos y archivos de forma permanente",
+            "Medir la velocidad del procesador",
+            "Proveer energía a la computadora",
+            "Mejorar la calidad de la imagen en los videos"
+        ],
+        "correct": 0
+    },
+    {
+        "tema": "almacenamiento",
+        "question": "¿Cuál es una ventaja de un SSD sobre un HDD?",
+        "answers": [
+            "Mayor velocidad de lectura y escritura",
+            "Mayor capacidad de almacenamiento",
+            "Mejor rendimiento gráfico",
+            "Menor costo"
+        ],
+        "correct": 0
+    },
+    {
+        "tema": "almacenamiento",
+        "question": "¿Puede funcionar una computadora sin un disco duro?",
+        "answers": [
+            "No, porque necesita un lugar para guardar el sistema operativo y los archivos",
+            "Sí, si tiene suficiente memoria RAM",
+            "No, porque solo puede usar una memoria USB",
+            "Sí, pero solo por un corto tiempo"
+        ],
+        "correct": 0
+    },
+    {
+        "tema": "almacenamiento",
+        "question": "¿Qué sucede cuando un disco duro falla?",
+        "answers": [
+            "Se pierden los datos almacenados",
+            "Se mejora la velocidad del sistema",
+            "Se aumenta la capacidad de almacenamiento",
+            "El sistema se vuelve más rápido"
+        ],
+        "correct": 0
+    }
+]

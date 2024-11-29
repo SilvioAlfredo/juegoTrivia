@@ -1,0 +1,84 @@
+html, body {
+  height: 100%;
+  margin: 0; /* Eliminar márgenes por defecto */
+}
+
+.cuerpo {
+  height: 100%; /* Ajustar a la altura de la ventana */
+  display: flex;
+  flex-direction: column;
+  background-color: #62a0ea;
+}
+
+.encabezado{
+  display: flex;
+  flex-direction: column;
+  height: 15%;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.5vw;
+  border-radius: 2px;
+  background: linear-gradient(145deg, #3077cd, #398df4);
+  box-shadow: 5px 5px 10px #3078cf47,
+              -5px -5px 10px #3a90f9;
+}
+.mainIndex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3% 35% 3% 35%;
+  border-radius: 50px;
+  background: #62a0ea;
+  box-shadow: inset 34px 34px 68px #446ea1be,
+            inset -34px -34px 68px #80d3ffaf;
+  height: 70%;
+}
+.textoTarjeta{
+  font-size: 2.5vw;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.formulario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 65%;
+}
+.formulario input{
+  border-radius: 10px;
+  width: 15vw;
+  height:3vh;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  height: 15%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 2px;
+  background: linear-gradient(145deg, #3077cd, #398df4);
+  box-shadow: 5px 5px 10px #3078cf47,
+              -5px -5px 10px #3a90f9;
+}
+.mainLevel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3% 15% 3% 15%;
+  border-radius: 50px;
+  background: #62a0ea;
+  box-shadow: inset 34px 34px 68px #446ea1be,
+            inset -34px -34px 68px #80d3ffaf;
+  height: 70%;
+}
+strong, button{
+  margin-bottom: 2vw;
+  border-radius: 5px;
+  
+}

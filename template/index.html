@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Aplicación Expo</title>
+      <link rel = "stylesheet" href="./style.css">
+  </head>
+  <body class="cuerpo">
+    <header class="encabezado">
+      <h2 class="title">TriviaESC</h2>
+    </header>
+    <main class="mainIndex">
+      <h1 class="textoTarjeta">¡Bienvenidos!</h1>
+      <form class="formulario" method="POST">
+        <label for="nombre">Ingrese su Nombre</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Nombre" required />
+
+        <label for="edad">Ingrese su Edad</label>
+        <input id="edad" name="edad" type="number" placeholder="Edad" required />
+
+        <label for="rol">Ingrese su Rol</label>
+        <input id="rol" name="rol" type="text" placeholder="Rol" required />
+
+        <button class="button" id="registro">Enviar</button>
+      </form>
+    </main>
+    <footer class="footer">
+      <p>&copy Riveros Silvio A.</p>
+    </footer>
+  </body>
+  <script type="module" src="../login.js"></script>
+</html>
