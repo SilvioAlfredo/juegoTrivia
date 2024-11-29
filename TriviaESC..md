@@ -1,6 +1,6 @@
-¡Exactamente! Esa es una excelente combinación de tecnologías. Puedes usar JSON para almacenar y cargar los datos estáticos, como las preguntas y opciones, y usar SQLite para manejar datos dinámicos, como los usuarios, sus respuestas, y puntajes. Esta separación te da lo mejor de ambos mundos: simplicidad en la carga de contenido estático y potencia para gestionar datos dinámicos en la base de datos.
+Este proyecto es una combinación de tecnologías web, python y sqlite, para crear un juego de trivia con un enfoque educativo.
 
-### **Ejemplo de flujo:**
+### **Explicación de proyecto:**
 
 1. **JSON para almacenar preguntas y opciones**:
    - Puedes usar un archivo JSON para almacenar las preguntas de forma sencilla y cargarlo en memoria cuando inicies la aplicación.
@@ -23,32 +23,7 @@
    ```
 
 2. **SQLite para almacenar datos dinámicos**:
-   - Utilizas SQLite para gestionar información que cambia, como los usuarios, sus respuestas y los puntajes.
-   - Puedes crear tablas para **usuarios**, **respuestas** y **puntuaciones**.
-
-   **Ejemplo de esquema de base de datos (SQLite):**
-
-   ```sql
-   CREATE TABLE usuarios (
-     id INTEGER PRIMARY KEY AUTOINCREMENT,
-     nombre TEXT NOT NULL
-   );
-
-   CREATE TABLE respuestas (
-     id INTEGER PRIMARY KEY AUTOINCREMENT,
-     usuario_id INTEGER,
-     pregunta_id INTEGER,
-     respuesta INTEGER,
-     FOREIGN KEY(usuario_id) REFERENCES usuarios(id)
-   );
-
-   CREATE TABLE puntajes (
-     id INTEGER PRIMARY KEY AUTOINCREMENT,
-     usuario_id INTEGER,
-     puntaje INTEGER,
-     FOREIGN KEY(usuario_id) REFERENCES usuarios(id)
-   );
-   ```
+   - Utilizar SQLite para gestionar información como información del usuario y su correspondiente puntaje.
 
 ### **Flujo de trabajo sugerido:**
 
