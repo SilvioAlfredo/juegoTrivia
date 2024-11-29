@@ -48,34 +48,49 @@ Este proyecto es una combinación de tecnologías web, python y sqlite, para cre
    usuario_id = cursor.lastrowid  # Obtener el ID del usuario recién agregado
    ```
 
-3. **Registrar respuestas de los usuarios**:
-   - A medida que el usuario responde preguntas, guardas cada respuesta en la tabla `respuestas`.
-
-   **Ejemplo en Python:**
-   ```python
-   pregunta_id = 1  # ID de la pregunta correspondiente
-   respuesta_usuario = 2  # Opción elegida por el usuario (por ejemplo, índice 2)
-
-   cursor.execute("INSERT INTO respuestas (usuario_id, pregunta_id, respuesta) VALUES (?, ?, ?)",
-                  (usuario_id, pregunta_id, respuesta_usuario))
-   conn.commit()
-   ```
+3. **Registrar los usuarios**:
 
 4. **Calcular puntaje y guardarlo**:
-   - Una vez que el usuario ha respondido todas las preguntas, puedes calcular el puntaje en base a las respuestas correctas y almacenarlo en la tabla `puntajes`.
+   - Una vez que el usuario ha respondido todas las preguntas, se toman todos los datos y se almacenan en la tabla correspondiente en SQLite.
 
    **Ejemplo en Python:**
    ```python
-   puntaje_final = 10  # Ejemplo de cálculo de puntaje
+    @app.route('/api/usuarios', methods=['POST'])
+    def insertar_usuario():
+        try:
+            print("Recibiendo datos...")
+            data = request.get_json()
+            print(data)
 
-   cursor.execute("INSERT INTO puntajes (usuario_id, puntaje) VALUES (?, ?)", (usuario_id, puntaje_final))
-   conn.commit()
+            nombre = data.get('nombre')
+            cantidad = data.get('edad')
+            rol = data.get('rol')
+            puntuacion = data.get('puntuacion')
+
+            if not nombre or not cantidad or not rol or not puntuacion:
+                return jsonify({"error": "Faltan datos en la solicitud"}), 400
+
+            conn = sqlite3.connect('datosDB.db')
+            cursor = conn.cursor()
+
+            cursor.execute('''CREATE TABLE IF NOT EXISTS usuarios 
+                              (id INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT, edad INTEGER, rol TEXT, puntuacion INTEGER)''')
+
+            cursor.execute("INSERT INTO usuarios (nombre, edad, rol, puntuacion) VALUES (?, ?, ?, ?)", (nombre, cantidad, rol, puntuacion))
+            conn.commit()
+
+            return jsonify({"message": "Usuario insertado correctamente"}), 201
+
+        except Exception as e:
+            print("Error:", e)
+            return jsonify({"error": str(e)}), 500
+
+        finally:
+            if conn:
+                conn.close()
    ```
 
 ### **Ventajas de este enfoque**:
 - **Separación de responsabilidades**: JSON para los datos estáticos (preguntas y opciones), y SQLite para datos dinámicos (usuarios, respuestas, puntajes).
 - **Simplicidad y eficiencia**: Al usar JSON, no tienes que realizar consultas complejas para las preguntas. Solo las cargas una vez y las usas durante el cuestionario. Luego, todo lo relacionado con los usuarios y sus interacciones queda almacenado en SQLite.
 - **Escalabilidad**: A medida que tengas más usuarios o más tipos de datos, puedes mantener los datos estáticos en JSON y manejar los datos crecientes de manera eficiente con SQLite.
-
-### **Cuando expandir:**
-Si en algún momento las preguntas también cambian dinámicamente o quieres tener una gran base de datos de preguntas, podrías considerar migrarlas a SQLite también. Pero para comenzar, esta combinación es ideal.
