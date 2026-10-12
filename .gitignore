@@ -1,0 +1,53 @@
+# ================= Raíz del proyecto TriviaESC =================
+
+# ---- Python / Flask ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.venv/
+venv/
+ENV/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---- SQLite de desarrollo ----
+# Se regenera solo con init_db() al arrancar el backend.
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite3
+
+# ---- Node / Next.js (refuerzo a nivel raíz) ----
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/coverage/
+*.tsbuildinfo
+
+# ---- Documentación generada ----
+# Swagger: python backend/export_spec.py  -> docs/swagger/openapi.json
+# JSDoc:   cd frontend && npm run docs   -> docs/api/
+docs/
+
+# ---- Entorno y secretos (ver frontend/.env.example) ----
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ---- Logs ----
+*.log
+.next/dev/logs/
+
+# ---- SO e IDEs ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~

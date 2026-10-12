@@ -1,0 +1,6 @@
+{
+  "entryPoints": ["src/lib/api.ts"],
+  "out": "../docs/api",
+  "name": "TriviaESC · Cliente Next.js",
+  "readme": "none"
+}
